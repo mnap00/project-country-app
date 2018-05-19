@@ -1,0 +1,26 @@
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import CountryFlagList from '../components/flag-list.component';
+import {getCountries} from '../actions/actions-countries';
+
+class CountryFlagContainer extends Component {
+    constructor(props) {
+        super(props);
+    }
+    componentDidMount() {
+        this.props.dispatch(getCountries());
+    }
+    render() {
+        return (
+            <div>
+                <CountryFlagList countries={this.props.countries} />
+            </div>
+        );
+    }
+}
+
+const mapStateToProps = state => ({
+    countries: state.countriesReducer.countries
+});
+
+export default connect(mapStateToProps)(CountryFlagContainer);
