@@ -1,4 +1,5 @@
 import React from 'react';
+require('../main.css');
 
 const CountryFlag = (props) => (
     <div className='country-logo-wrapper'>
