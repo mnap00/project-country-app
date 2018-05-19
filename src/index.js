@@ -1,16 +1,19 @@
 import React from 'react';
 import {render} from 'react-dom';
+import {Router, Route, hashHistory} from 'react-router';
 import {Provider} from 'react-redux';
 import store from './store';
 import DevTools from './devtools';
 import * as actions from './actions/actions-countries';
+import Navigation from './components/navigation.component';
 
 render (
     <Provider store={store}>
-        <div>
-            <h1>Initiate Project</h1>
+        <Router history={hashHistory}>
+            <Route path='/' component={Navigation}>
+            </Route>
             <DevTools />
-        </div>
+        </Router>
     </Provider>,
     document.getElementById('root')
 );
