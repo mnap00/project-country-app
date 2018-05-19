@@ -10,11 +10,17 @@ const Navigation = props => (
                 <div className='navbar-header'>
                     <Link className='navbar-brand' to='/'>Countries.js</Link>
                 </div>
-                <div className='collapse navbar-collapse'>
-                    <ul className='nav navbar-nav'>
-                        <li><Link to='/countries'>Countries</Link></li>
-                        <li><Link to='/continents'>Continents</Link></li>
-                        <li><Link to='/contact'>Contact</Link></li>
+                <div className='navbar navbar-expand mr-auto'>
+                    <ul className='navbar-nav'>
+                        <li className='nav-item p-1'>
+                            <Link to='/countries'>Countries</Link>
+                        </li>
+                        <li className='p-1'>
+                            <Link to='/continents'>Continents</Link>
+                        </li>
+                        <li className='p-1'>
+                            <Link to='/contact'>Contact</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
