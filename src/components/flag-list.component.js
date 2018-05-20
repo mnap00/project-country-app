@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
 import CountryFlag from './flag.component';
-require('../main.css');
 
 const CountryFlagList = (props) => (
     <div className='countries-list'>
@@ -15,6 +14,8 @@ const CountryFlagList = (props) => (
                         <CountryFlag country={country} />
                     </Link>
                     <button
+                        type='button'
+                        className='btn btn-outline-secondary btn-sm'
                         onClick={() => props.deleteCountry(country.id)}
                     >
                         DELETE

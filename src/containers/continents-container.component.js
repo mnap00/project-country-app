@@ -19,7 +19,10 @@ class ContinentsContainer extends Component {
     render() {
         return (
             <div>
-                <select onChange={this.handleSetContinent}>
+                <select
+                    className='custom-select'
+                    onChange={this.handleSetContinent}
+                >
                     <option value='Europe'>Europe</option>
                     <option value='Africa'>Africa</option>
                 </select>

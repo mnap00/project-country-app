@@ -1,9 +1,12 @@
 import React from 'react';
-require('../main.css');
 
 const CountryFlag = (props) => (
     <div className='country-logo-wrapper'>
-        <img className='country-logo' src={props.country.imageUrl} alt='country flag' />
+        <img
+            className='country-logo'
+            src={props.country.imageUrl}
+            alt='country flag'
+        />
     </div>
 );
 
