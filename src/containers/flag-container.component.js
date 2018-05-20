@@ -8,9 +8,6 @@ import {
 } from '../actions/actions-countries';
 
 class CountryFlagContainer extends Component {
-    constructor(props) {
-        super(props);
-    }
     componentDidMount() {
         this.props.dispatch(getCountries());
         this.props.dispatch(searchCountries(''));
