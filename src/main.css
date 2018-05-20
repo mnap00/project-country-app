@@ -8,7 +8,7 @@
     width: 300px;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.13);
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 header {
@@ -42,7 +42,8 @@ h1 {
     letter-spacing: 1.2px;
     text-align: center;
     font-weight: 600;
-    color: #323232
+    color: #323232;
+    margin: 0;
 }
 
 h2 {
@@ -51,6 +52,7 @@ h2 {
     font-size: 16px;
     letter-spacing: 1.2px;
     color: #5f5f5f;
+    margin: 0;
 }
 
 .info {
@@ -86,7 +88,6 @@ h2 {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 50px;
 }
 
 .single-country {

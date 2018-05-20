@@ -6,6 +6,7 @@ import store from './store';
 import routes from './routes';
 import DevTools from './devtools';
 import * as actions from './actions/actions-countries';
+require('./main.css');
 
 render (
     <Provider store={store}>
