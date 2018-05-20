@@ -14,6 +14,11 @@ const CountryFlagList = (props) => (
                     >
                         <CountryFlag country={country} />
                     </Link>
+                    <button
+                        onClick={() => props.deleteCountry(country.id)}
+                    >
+                        DELETE
+                    </button>
                 </div>
             );
         })}
