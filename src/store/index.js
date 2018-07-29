@@ -1,5 +1,6 @@
 import {createStore} from 'redux';
 import reducers from '../reducers/index';
+import {devToolsEnhancer} from 'redux-devtools-extension/logOnlyInProduction';
 /*import DevTools from '../devtools';
  *
  * const store = createStore(
@@ -10,7 +11,7 @@ import reducers from '../reducers/index';
 
 const store = createStore(
     reducers,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    devToolsEnhancer()
 );
 
 export default store;
