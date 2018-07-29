@@ -2,7 +2,7 @@
   "name": "mod-20-react-router-country-app",
   "version": "0.5.0",
   "private": true,
-  "homepage": "https://github.com/mnap00/project-country-app",
+  "homepage": "https://mnap00.github.com/project-country-app",
   "devDependencies": {
     "gh-pages": "^1.2.0",
     "react-scripts": "1.1.4",
